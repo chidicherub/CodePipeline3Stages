@@ -6,7 +6,7 @@ phases:
       python: 3.9 # installs python 3.9
     commands:
       - echo ===install cfn-lint===
-      - pip3 intstall cfn-lint
+      - pip3 install cfn-lint
       # you can add commands section to install if you want to directly input installation code for python and cfn-lint
       # pip3 install cfn-lint
       # 
@@ -41,4 +41,3 @@ artifacts:
   files:
     - CF-source-artifact.yaml
   
-
