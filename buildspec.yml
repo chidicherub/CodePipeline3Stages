@@ -32,8 +32,6 @@ phases:
     - echo === Check if CF-source-artifact.yaml exists ===
     - ls -l CF-source-artifact.yaml
 
-    finally:
-      - echo This runs the build command even if it falls
   post_build:
     commands:
       - echo Entered the post_build phase...
