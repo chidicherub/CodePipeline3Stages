@@ -21,16 +21,16 @@ phases:
     finally:
       - echo This always runs even if the command fails
   build:
-  commands:
-    - echo Entered the build phase...
-    - echo ===check for cloudformation template===
-    - ls -l
-    - echo == run cfn-lint on template in file==
-    - cfn-lint ec2templates.yaml
-    - echo == build template artifact for next stage==
-    - aws cloudformation package --template-file ec2templates.yaml --s3-bucket julytrainbucket --output-template-file CF-source-artifact.yaml
-    - echo === Check if CF-source-artifact.yaml exists ===
-    - ls -l CF-source-artifact.yaml
+    commands:
+      - echo Entered the build phase...
+      - echo ===check for cloudformation template===
+      - ls -l
+      - echo == run cfn-lint on template in file==
+      - cfn-lint ec2templates.yaml
+      - echo == build template artifact for next stage==
+      - aws cloudformation package --template-file ec2templates.yaml --s3-bucket julytrainbucket --output-template-file CF-source-artifact.yaml
+      - echo === Check if CF-source-artifact.yaml exists ===
+      - ls -l CF-source-artifact.yaml
 
   post_build:
     commands:
