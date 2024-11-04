@@ -35,9 +35,9 @@ Resources:
         ImageId: !FindInMap [AMIRegionMap, !Ref "AWS::Region", MyAMI1]
         InstanceType: !Ref MyInstanceType
         KeyName: !Ref Mykeypair
-        SubnetId: subnet-0705c93a476d90a6a
+        SubnetId: subnet-02d1921d9d749276b
         SecurityGroupIds:  # Use SecurityGroupIds for EC2 instance
-          - sg-089ca4b9bd86c0fef 
+          - subnet-02d1921d9d749276b
         Tags: 
           - Key: "ec2-tag"
             Value: "Chidi"
