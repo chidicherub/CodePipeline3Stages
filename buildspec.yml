@@ -41,6 +41,6 @@ phases:
 artifacts:
   files:
     - CF-source-artifact.yaml
-    - '**/*'  # This will include all files in the directory
+ 
 
   
