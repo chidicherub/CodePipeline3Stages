@@ -14,6 +14,17 @@ Parameters:
       Description: Keypair for us-east-1 region
       Type: AWS::SSM::Parameter::Value<String>
       Default: /ec2/keypair/cloudformation
+    VPC:
+        Type: 'AWS::EC2::VPC'
+        Properties:
+          EnableDnsSupport: 'true'
+          EnableDnsHostnames: 'true'
+          CidrBlock: 10.0.0.0/16   
+    PublicSubnet:
+        Type: 'AWS::EC2::Subnet'
+        Properties:
+          VpcId: !Ref VPC
+          CidrBlock: 10.0.0.0/20      
       
 Mappings:
       AMIRegionMap: 
