@@ -34,7 +34,7 @@ phases:
 
   post_build:
     commands:
-      - echo Entered the post_build phase...
+      - echo Entered the post_build phase by Chidi...
       - echo Build completed on `date`
 
 
