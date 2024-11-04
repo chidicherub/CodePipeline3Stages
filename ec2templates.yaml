@@ -10,7 +10,7 @@ Parameters:
         - m1.small
         - m1.large
         - t3.micro
-    Mykeypair: 
+    MyKeyPair: 
       Description: Keypair for us-east-1 region
       Type: AWS::SSM::Parameter::Value<String>
       Default: /ec2/keypair/cloudformation
