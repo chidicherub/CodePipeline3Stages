@@ -14,6 +14,7 @@ Parameters:
       Description: Keypair for us-east-1 region
       Type: AWS::SSM::Parameter::Value<String>
       Default: /ec2/keypair/cloudformation
+      
 Mappings:
       AMIRegionMap: 
         us-east-1:
