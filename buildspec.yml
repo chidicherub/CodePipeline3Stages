@@ -7,9 +7,10 @@ phases:
     commands:
       - echo ===install cfn-lint===
       - pip install cfn-lint
-      # you can add commands section to install if you want to directly input installation code for python and cfn-lint
-      # pip3 install cfn-lint
-      # 
+      # you can add commands section to install if you want to directly input installation code forcfn-lint
+      # pip install cfn-lint
+      # not all resources can be installed using runtime-versions; see package documentation
+      
     finally:
       - echo This always runs even if the installing runtime-versions fails
   pre_build:
